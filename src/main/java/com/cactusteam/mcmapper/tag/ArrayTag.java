@@ -5,8 +5,8 @@ import java.util.List;
 public class ArrayTag<T> extends BaseTag {
     private final List<T> entries;
 
-    public ArrayTag(String id, boolean alwaysInclude, List<T> entries) {
-        super(id, TagType.LIST, alwaysInclude, "");
+    public ArrayTag(String id, TagType type, boolean alwaysInclude, List<T> entries) {
+        super(id, type, alwaysInclude, "");
         this.entries = entries;
     }
 

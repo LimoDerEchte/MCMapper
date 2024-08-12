@@ -6,7 +6,7 @@ public class CompoundTag extends BaseTag {
     private final List<BaseTag> tags;
 
     public CompoundTag(String id, boolean alwaysInclude, List<BaseTag> tags) {
-        super(id, TagType.LIST, alwaysInclude, "");
+        super(id, TagType.COMPOUND, alwaysInclude, "");
         this.tags = tags;
     }
 
