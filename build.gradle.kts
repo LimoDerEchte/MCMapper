@@ -1,9 +1,10 @@
 plugins {
     id("java")
+    id("maven-publish")
 }
 
 group = "com.cactusteam"
-version = "1.0-SNAPSHOT"
+version = "SNAPSHOT"
 
 repositories {
     mavenCentral()
