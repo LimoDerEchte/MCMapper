@@ -6,6 +6,12 @@ plugins {
 group = "com.github.LimoDerEchte"
 version = "SNAPSHOT"
 
+if(System.getenv("JITPACK") != null) {
+    tasks.withType<GenerateModuleMetadata> {
+        enabled = false
+    }
+}
+
 java {
     toolchain {
         languageVersion.set(JavaLanguageVersion.of(17))
