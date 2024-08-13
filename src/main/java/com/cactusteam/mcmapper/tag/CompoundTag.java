@@ -17,6 +17,6 @@ public class CompoundTag extends BaseTag {
 
     @Override
     public String toCommandNbt() {
-        return "{%s}".formatted(String.join(",", tags.stream().filter(BaseTag::shouldIncludeInCommand).map(tag -> "\"%s\": %s".formatted(tag.id, tag.toCommandNbt())).toList()));
+        return "{%s}".formatted(String.join(",", tags.stream().filter(BaseTag::shouldIncludeInCommand).map(tag -> "%s: %s".formatted(tag.id, tag.toCommandNbt())).toList()));
     }
 }
