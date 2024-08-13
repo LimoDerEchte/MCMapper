@@ -1,1 +1,1 @@
-rootProject.name = "mcmapper"
+rootProject.name = "MCMapper"
