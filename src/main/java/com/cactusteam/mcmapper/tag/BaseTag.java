@@ -23,7 +23,7 @@ public class BaseTag {
 
     public String toCommandNbt() {
         switch (type) {
-            case BYTE, SHORT, INT, LONG, DOUBLE, FLOAT, BOOLEAN -> {
+            case BYTE, SHORT, INT, LONG, DOUBLE, FLOAT -> {
                 return value;
             }
             case STRING -> {

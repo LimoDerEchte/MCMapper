@@ -7,7 +7,6 @@ public enum TagType {
     LONG,
     FLOAT,
     DOUBLE,
-    BOOLEAN,
     BYTE_ARR,
     STRING,
     LIST,
