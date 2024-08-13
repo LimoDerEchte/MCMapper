@@ -13,5 +13,6 @@ public enum TagType {
     LIST,
     COMPOUND,
     INT_ARR,
-    LONG_ARR
+    LONG_ARR,
+    CUSTOM
 }
