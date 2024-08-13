@@ -6,6 +6,12 @@ plugins {
 group = "com.github.LimoDerEchte"
 version = "SNAPSHOT"
 
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(21))
+    }
+}
+
 repositories {
     mavenCentral()
 }
