@@ -3,10 +3,14 @@ package com.cactusteam.mcmapper.generic;
 import com.cactusteam.mcmapper.tag.BaseTag;
 import com.cactusteam.mcmapper.tag.TagType;
 
-public class TicksTag extends BaseTag {
+public class TimePeriodTag extends BaseTag {
     public boolean isInSeconds;
 
-    public TicksTag(String id, boolean alwaysInclude) {
+    public TimePeriodTag(String id) {
+        this(id, false);
+    }
+
+    public TimePeriodTag(String id, boolean alwaysInclude) {
         super(id, TagType.CUSTOM, alwaysInclude, "");
     }
 

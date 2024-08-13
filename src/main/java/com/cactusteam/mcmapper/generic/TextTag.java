@@ -11,7 +11,11 @@ import java.util.stream.Collectors;
 public class TextTag extends BaseTag {
     public final List<TextEntry> sections = new ArrayList<>();
 
-    public TextTag(String id, boolean alwaysInclude, boolean requireCursive) {
+    public TextTag(String id) {
+        this(id, false);
+    }
+
+    public TextTag(String id, boolean alwaysInclude) {
         super(id, TagType.STRING, alwaysInclude, "");
     }
 

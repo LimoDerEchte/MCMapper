@@ -5,6 +5,10 @@ import java.util.List;
 public class ArrayTag<T> extends BaseTag {
     private final List<T> entries;
 
+    public ArrayTag(String id, TagType type) {
+        this(id, type, false, List.of());
+    }
+
     public ArrayTag(String id, TagType type, boolean alwaysInclude, List<T> entries) {
         super(id, type, alwaysInclude, "");
         this.entries = entries;

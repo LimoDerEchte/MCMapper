@@ -4,7 +4,7 @@ public class BaseTag {
     public final boolean alwaysInclude;
     public final String id;
     public final TagType type;
-    public String value = "";
+    public String value;
 
     public BaseTag(String id, TagType type, boolean alwaysInclude, String initialValue) {
         this.id = id;
