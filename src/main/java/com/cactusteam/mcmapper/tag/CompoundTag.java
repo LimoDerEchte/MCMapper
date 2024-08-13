@@ -1,13 +1,14 @@
 package com.cactusteam.mcmapper.tag;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class CompoundTag extends BaseTag {
-    private final List<BaseTag> tags;
+    protected final ArrayList<BaseTag> tags;
 
     public CompoundTag(String id, boolean alwaysInclude, List<BaseTag> tags) {
         super(id, TagType.COMPOUND, alwaysInclude, "");
-        this.tags = tags;
+        this.tags = new ArrayList<>(tags);
     }
 
     @Override
