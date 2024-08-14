@@ -3,7 +3,7 @@ package com.cactusteam.mcmapper.tag;
 import java.util.List;
 
 public class ListTag extends BaseTag {
-    private final List<CompoundTag> tags;
+    public final List<CompoundTag> tags;
 
     public ListTag(String id, boolean alwaysInclude, List<CompoundTag> tags) {
         super(id, TagType.LIST, alwaysInclude, "");

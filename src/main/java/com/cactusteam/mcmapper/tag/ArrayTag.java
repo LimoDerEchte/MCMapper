@@ -3,7 +3,7 @@ package com.cactusteam.mcmapper.tag;
 import java.util.List;
 
 public class ArrayTag<T> extends BaseTag {
-    private final List<T> entries;
+    public final List<T> entries;
 
     public ArrayTag(String id, TagType type) {
         this(id, type, false, List.of());

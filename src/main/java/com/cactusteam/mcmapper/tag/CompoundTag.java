@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CompoundTag extends BaseTag {
-    protected final ArrayList<BaseTag> tags;
+    public final ArrayList<BaseTag> tags;
 
     public CompoundTag(String id, boolean alwaysInclude, List<BaseTag> tags) {
         super(id, TagType.COMPOUND, alwaysInclude, "");

@@ -1,9 +1,12 @@
+import io.github.cdimascio.dotenv.Dotenv
+import io.github.cdimascio.dotenv.DotenvBuilder
+
 plugins {
     id("java")
     id("maven-publish")
 }
 
-group = "com.github.LimoDerEchte"
+group = "com.cactusteam"
 version = "SNAPSHOT"
 
 if(System.getenv("JITPACK") != null) {
@@ -28,15 +31,23 @@ val sourcesJar by tasks.registering(Jar::class) {
 }
 
 publishing {
-    repositories {
-        maven {
-            url = uri("~/.m2/repository")
-        }
-    }
     publications {
-        register("mavenJava", MavenPublication::class) {
+        create<MavenPublication>("mavenJava") {
             from(components["java"])
             artifact(sourcesJar.get())
+        }
+        repositories {
+            maven {
+                name = "cactus"
+                url = uri("https://mvn.cactusmod.xyz/repository/cactus/")
+                credentials {
+                    val dotenv: Dotenv = DotenvBuilder()
+                        .directory(rootDir.absolutePath)
+                        .load()
+                    username = dotenv["MVN_USER"]
+                    password = dotenv["MVN_PASS"]
+                }
+            }
         }
     }
 }
