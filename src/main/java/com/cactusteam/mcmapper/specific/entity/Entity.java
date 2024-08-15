@@ -1,4 +1,4 @@
-package com.cactusteam.mcmapper.specific;
+package com.cactusteam.mcmapper.specific.entity;
 
 import com.cactusteam.mcmapper.generic.*;
 import com.cactusteam.mcmapper.tag.ArrayTag;
@@ -21,9 +21,11 @@ public class Entity extends CompoundTag {
                 new BoolTag("Silent"),
                 new BoolTag("Invulnerable"),
                 new BoolTag("Glowing"),
-                new ArrayTag<Integer>("UUID", TagType.INT_ARR),
                 new BoolTag("CustomNameVisible"),
-                new TextTag("CustomName")
+                new TextTag("CustomName"),
+                new UUIDTag("UUID"),
+                new ArrayTag<String>("Tags", TagType.STRING_ARR, ""),
+                new CustomNbtTag()
         ));
     }
 }

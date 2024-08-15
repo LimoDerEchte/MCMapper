@@ -13,5 +13,6 @@ public enum TagType {
     COMPOUND,
     INT_ARR,
     LONG_ARR,
+    STRING_ARR,
     CUSTOM
 }

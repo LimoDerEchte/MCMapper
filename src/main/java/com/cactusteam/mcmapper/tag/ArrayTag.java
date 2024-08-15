@@ -23,6 +23,7 @@ public class ArrayTag<T> extends BaseTag {
 
     @Override
     public String toCommandNbt() {
-        return "[%s;%s]".formatted(typeIdentifier, String.join(",", entries.stream().map(String::valueOf).toList()));
+        return typeIdentifier.isEmpty() ? "[%s]".formatted(String.join(",", entries.stream().map(String::valueOf).toList())) :
+        "[%s;%s]".formatted(typeIdentifier, String.join(",", entries.stream().map(String::valueOf).toList()));
     }
 }
