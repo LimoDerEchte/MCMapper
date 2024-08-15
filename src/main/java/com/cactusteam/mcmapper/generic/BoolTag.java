@@ -8,8 +8,12 @@ public class BoolTag extends BaseTag {
     public Bool value;
 
     public BoolTag(String id) {
+        this(id, Bool.UNSET);
+    }
+
+    public BoolTag(String id, Bool value) {
         super(id, TagType.CUSTOM, false, "");
-        this.value = Bool.UNSET;
+        this.value = value;
     }
 
     @Override

@@ -7,7 +7,7 @@ plugins {
 }
 
 group = "com.cactusteam"
-version = "SNAPSHOT"
+version = "1.2"
 
 if(System.getenv("JITPACK") != null) {
     tasks.withType<GenerateModuleMetadata> {

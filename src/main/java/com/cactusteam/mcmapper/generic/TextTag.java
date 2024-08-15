@@ -16,7 +16,7 @@ public class TextTag extends BaseTag {
     }
 
     public TextTag(String id, boolean alwaysInclude) {
-        super(id, TagType.STRING, alwaysInclude, "");
+        super(id, TagType.CUSTOM, alwaysInclude, "");
     }
 
     @Override
