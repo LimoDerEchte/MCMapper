@@ -11,6 +11,7 @@ import java.util.List;
 public class Mob extends Entity {
 
     public Mob(String mobId) {
+        super(mobId);
         tags.addAll(List.of(
                 new BaseTag("FallDistance", TagType.FLOAT),
                 new TimePeriodTag("PortalCooldown"),
@@ -26,7 +27,6 @@ public class Mob extends Entity {
                 new BoolTag("NoAI"),
                 new BoolTag("CanPickUpLoot"),
                 // TODO: Equipment (Hands & Armor)
-                new BaseTag("AbsorptionAmount", TagType.FLOAT),
                 new BaseTag("Health", TagType.FLOAT),
                 new BaseTag("SleepingX", TagType.INT),
                 new BaseTag("SleepingY", TagType.INT),
