@@ -1,4 +1,4 @@
-package com.cactusteam.mcmapper.tag;
+package com.cactusteam.mcmapper.type;
 
 public enum TagType {
     BYTE,

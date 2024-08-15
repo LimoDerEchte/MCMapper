@@ -1,7 +1,7 @@
 package com.cactusteam.mcmapper.generic;
 
 import com.cactusteam.mcmapper.tag.BaseTag;
-import com.cactusteam.mcmapper.tag.TagType;
+import com.cactusteam.mcmapper.type.TagType;
 import com.cactusteam.mcmapper.type.Bool;
 
 public class BoolTag extends BaseTag {

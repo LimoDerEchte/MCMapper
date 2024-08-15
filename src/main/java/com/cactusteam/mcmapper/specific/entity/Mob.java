@@ -4,7 +4,7 @@ import com.cactusteam.mcmapper.generic.BoolTag;
 import com.cactusteam.mcmapper.generic.LeashTag;
 import com.cactusteam.mcmapper.generic.TimePeriodTag;
 import com.cactusteam.mcmapper.tag.BaseTag;
-import com.cactusteam.mcmapper.tag.TagType;
+import com.cactusteam.mcmapper.type.TagType;
 
 import java.util.List;
 

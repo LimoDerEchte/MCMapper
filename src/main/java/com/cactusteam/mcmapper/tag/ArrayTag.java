@@ -1,5 +1,7 @@
 package com.cactusteam.mcmapper.tag;
 
+import com.cactusteam.mcmapper.type.TagType;
+
 import java.util.List;
 
 public class ArrayTag<T> extends BaseTag {

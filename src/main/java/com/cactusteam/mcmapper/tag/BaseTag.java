@@ -1,5 +1,7 @@
 package com.cactusteam.mcmapper.tag;
 
+import com.cactusteam.mcmapper.type.TagType;
+
 public class BaseTag {
     public final boolean alwaysInclude;
     public final String id;

@@ -3,7 +3,7 @@ package com.cactusteam.mcmapper.specific.entity;
 import com.cactusteam.mcmapper.generic.*;
 import com.cactusteam.mcmapper.tag.ArrayTag;
 import com.cactusteam.mcmapper.tag.CompoundTag;
-import com.cactusteam.mcmapper.tag.TagType;
+import com.cactusteam.mcmapper.type.TagType;
 
 import java.util.List;
 

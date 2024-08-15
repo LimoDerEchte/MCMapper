@@ -1,7 +1,7 @@
 package com.cactusteam.mcmapper.generic;
 
 import com.cactusteam.mcmapper.tag.BaseTag;
-import com.cactusteam.mcmapper.tag.TagType;
+import com.cactusteam.mcmapper.type.TagType;
 
 public class RotationTag extends BaseTag {
     public String yaw, pitch;
