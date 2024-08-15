@@ -3,14 +3,16 @@ package com.cactusteam.mcmapper.tag;
 import java.util.List;
 
 public class ArrayTag<T> extends BaseTag {
+    private final String typeIdentifier;
     public final List<T> entries;
 
-    public ArrayTag(String id, TagType type) {
-        this(id, type, false, List.of());
+    public ArrayTag(String id, TagType type, String typeIdentifier) {
+        this(id, type, typeIdentifier, false, List.of());
     }
 
-    public ArrayTag(String id, TagType type, boolean alwaysInclude, List<T> entries) {
+    public ArrayTag(String id, TagType type, String typeIdentifier, boolean alwaysInclude, List<T> entries) {
         super(id, type, alwaysInclude, "");
+        this.typeIdentifier = typeIdentifier;
         this.entries = entries;
     }
 
@@ -21,6 +23,6 @@ public class ArrayTag<T> extends BaseTag {
 
     @Override
     public String toCommandNbt() {
-        return "[%s]".formatted(String.join(",", entries.stream().map(String::valueOf).toList()));
+        return "[%s;%s]".formatted(typeIdentifier, String.join(",", entries.stream().map(String::valueOf).toList()));
     }
 }

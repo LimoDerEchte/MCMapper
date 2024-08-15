@@ -1,5 +1,7 @@
 package com.cactusteam.mcmapper.tag;
 
+import com.cactusteam.mcmapper.generic.CustomNbtTag;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,6 +20,10 @@ public class CompoundTag extends BaseTag {
 
     @Override
     public String toCommandNbt() {
-        return "{%s}".formatted(String.join(",", tags.stream().filter(BaseTag::shouldIncludeInCommand).map(tag -> "%s:%s".formatted(tag.id, tag.toCommandNbt())).toList()));
+        return "{%s}".formatted(String.join(",", tags.stream().filter(BaseTag::shouldIncludeInCommand).map(tag -> {
+            if(tag instanceof CustomNbtTag)
+                return tag.toCommandNbt();
+            return "%s:%s".formatted(tag.id, tag.toCommandNbt());
+        }).toList()));
     }
 }
