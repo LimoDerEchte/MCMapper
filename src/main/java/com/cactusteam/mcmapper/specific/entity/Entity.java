@@ -9,8 +9,8 @@ import java.util.List;
 
 public class Entity extends CompoundTag {
 
-    public Entity(String id, boolean alwaysInclude) {
-        super(id, alwaysInclude, List.of(
+    public Entity(String mobId) {
+        super("", false, List.of(
                 new MotionTag("Motion"),
                 new RotationTag("Rotation"),
                 new TimePeriodTag("Fire"),

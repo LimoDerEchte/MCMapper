@@ -10,8 +10,7 @@ import java.util.List;
 
 public class Mob extends Entity {
 
-    public Mob(String id, boolean alwaysInclude) {
-        super(id, alwaysInclude);
+    public Mob(String mobId) {
         tags.addAll(List.of(
                 new BaseTag("FallDistance", TagType.FLOAT),
                 new TimePeriodTag("PortalCooldown"),
