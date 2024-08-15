@@ -50,7 +50,7 @@ public class TextTag extends BaseTag {
         private String createTag() {
             StringBuilder sb = new StringBuilder();
             sb.append("{");
-            sb.append("\"%s\": \"%s\"".formatted(type, value));
+            sb.append("\"%s\":\"%s\"".formatted(type, value));
             addTag(sb, "font", font);
             addTag(sb, "color", color);
             addBoolTag(sb, "bold", bold);
@@ -66,7 +66,7 @@ public class TextTag extends BaseTag {
         protected void addBoolTag(StringBuilder sb, String key, Bool value) {
             if(value == Bool.UNSET)
                 return;
-            sb.append(",\"%s\":\"%s\"".formatted(key, value == Bool.TRUE ? "true" : "false"));
+            sb.append(",\"%s\":%s".formatted(key, value == Bool.TRUE ? "true" : "false"));
         }
 
         protected void addTag(StringBuilder sb, String key, String value) {
