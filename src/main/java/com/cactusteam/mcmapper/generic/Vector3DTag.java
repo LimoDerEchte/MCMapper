@@ -3,10 +3,10 @@ package com.cactusteam.mcmapper.generic;
 import com.cactusteam.mcmapper.tag.BaseTag;
 import com.cactusteam.mcmapper.tag.TagType;
 
-public class MotionTag extends BaseTag {
+public class Vector3DTag extends BaseTag {
     public String x, y, z;
 
-    public MotionTag(String id) {
+    public Vector3DTag(String id) {
         super(id, TagType.CUSTOM, false, "");
         this.x = "";
         this.y = "";
