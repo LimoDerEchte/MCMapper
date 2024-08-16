@@ -10,7 +10,7 @@ import java.util.List;
 public class Entity extends CompoundTag {
 
     public Entity(String mobId) {
-        super("", false, List.of(
+        super(mobId, false, List.of(
                 new MotionTag("Motion"),
                 new RotationTag("Rotation"),
                 new TimePeriodTag("Fire"),
