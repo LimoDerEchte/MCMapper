@@ -1,6 +1,6 @@
 package com.cactusteam.mcmapper.generic;
 
-import com.cactusteam.mcmapper.specific.entity.Item;
+import com.cactusteam.mcmapper.specific.item.Item;
 import com.cactusteam.mcmapper.tag.BaseTag;
 import com.cactusteam.mcmapper.type.TagType;
 

@@ -1,4 +1,4 @@
-package com.cactusteam.mcmapper.specific.entity;
+package com.cactusteam.mcmapper.specific.item;
 
 import com.cactusteam.mcmapper.tag.CompoundTag;
 
