@@ -155,14 +155,14 @@ public enum EntityType {
         return baseTag;
     }
 
-    public EntityType fromId(String id) {
+    public static EntityType fromId(String id) {
         for(EntityType type : EntityType.values())
             if(type.id.equals(id))
                 return type;
         return null;
     }
 
-    public EntityType fromName(String name) {
+    public static EntityType fromName(String name) {
         for(EntityType type : EntityType.values())
             if(type.name.equals(name))
                 return type;
