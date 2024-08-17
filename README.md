@@ -15,7 +15,7 @@ repositories {
 }
 
 dependencies {
-    implementation "com.cactusteam:MCMapper:1.2"
+    implementation "com.cactusteam:MCMapper:1.3"
 }
 ```
 If you are using **Gradle** with the **Kotlin DSL**, add the following to you `build.gradle.kts` file.
@@ -27,7 +27,7 @@ repositories {
 }
 
 dependencies {
-    implementation("com.cactusteam:MCMapper:1.2")
+    implementation("com.cactusteam:MCMapper:1.3")
 }
 ```
 ### Maven
@@ -44,7 +44,7 @@ If you are using **Maven**, add the following to your `pom.xml` file:
     <dependency>
         <groupId>com.cactusteam</groupId>
         <artifactId>MCMapper</artifactId>
-        <version>1.2</version>
+        <version>1.3</version>
     </dependency>
 </dependencies>
 ```
